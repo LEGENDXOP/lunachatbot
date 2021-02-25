@@ -11,8 +11,8 @@ from pyrogram import Client, filters
 luna = Client(
     ":memory:",
     bot_token=bot_token,
-    api_id=6,
-    api_hash="eb06d4abfb49dc3eeb1aeb98ae0f581e",
+    api_id=1822414,
+    api_hash="46f1888d3f68396bad08c92ac4d7f00a",
 )
 
 blacklisted = []
@@ -28,9 +28,7 @@ async def getresp(query):
 
 @luna.on_message(filters.command("repo") & ~filters.edited)
 async def repo(_, message):
-    await message.reply_text(
-        "[Github](https://github.com/thehamkercat/LunaChatBot)"
-        + " | [Group](t.me/PatheticProgrammers)", disable_web_page_preview=True)
+    await message.reply_text("jNL")
 
 @luna.on_message(filters.command("help") & ~filters.edited)
 async def start(_, message):
@@ -39,7 +37,7 @@ async def start(_, message):
         return
     await luna.send_chat_action(message.chat.id, "typing")
     await message.reply_text(
-        "**Only For Owners**\n/shutdown - `Shutdown Luna.`\n/blacklist - `Blacklist A User.`\n/whitelist - `Whitelist A User.`"
+        "**Only For Owner**\n/shutdown - `Shutdown Luna.`\n/blacklist - `Blacklist A User.`\n/whitelist - `Whitelist A User.`"
     )
 
 
