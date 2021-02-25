@@ -1,1 +1,1 @@
-python3 luna.py
+web: python3 luna.py
