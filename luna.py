@@ -1,7 +1,10 @@
 import aiohttp
 import asyncio
 import re
-from Config import bot_token, owner_id, bot_id
+import os
+bot_id = os.environ.get("BOT_ID", None)
+bot_token = os.environ.get("TOKEN", None)
+owner_id = os.environ.get("OWNER_ID", None)
 from pyrogram import Client, filters
 
 
