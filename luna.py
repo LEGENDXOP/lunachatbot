@@ -94,7 +94,7 @@ async def chat(_, message):
     if message.from_user.id in blacklisted:
         return
     if message.reply_to_message:
-        if not message.reply_to_message.from_user.id == bot_id:
+        if not message.reply_to_message.from_user.id == 1432617791:
             return
         await luna.send_chat_action(message.chat.id, "typing")
         if not message.text:
