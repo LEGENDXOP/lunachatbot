@@ -124,17 +124,6 @@ async def download_song(v_url):
 
 @register(pattern="^/videosong (.*)")
 async def download_video(v_url):
-    approved_userss = approved_users.find({})
-    for ch in approved_userss:
-        iid = ch["id"]
-        userss = ch["user"]
-    if v_url.is_group:
-        if await is_register_admin(v_url.input_chat, v_url.message.sender_id):
-            pass
-        elif v_url.chat_id == iid and v_url.sender_id == userss:
-            pass
-        else:
-            return
     url = v_url.pattern_match.group(1)
     rkp = await v_url.reply("`Processing ...`")
     if not url:
@@ -217,17 +206,6 @@ async def download_video(v_url):
 
 @register(pattern="^/lyrics ?(.*)")
 async def download_lyrics(v_url):
-    approved_userss = approved_users.find({})
-    for ch in approved_userss:
-        iid = ch["id"]
-        userss = ch["user"]
-    if v_url.is_group:
-        if await is_register_admin(v_url.input_chat, v_url.message.sender_id):
-            pass
-        elif v_url.chat_id == iid and v_url.sender_id == userss:
-            pass
-        else:
-            return
     query = v_url.pattern_match.group(1)
     if not query:
         await v_url.reply("You haven't specified which song to look for!")
