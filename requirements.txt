@@ -4,3 +4,4 @@ TgCrypto
 asyncio
 telethon
 pymongo
+dnspython
