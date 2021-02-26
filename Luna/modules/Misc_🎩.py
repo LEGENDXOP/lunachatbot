@@ -277,7 +277,7 @@ async def hi(event):
     )
 @tbot.on(events.NewMessage(pattern="@RoseLoverX"))
 async def leechers(event):
-        await.event.reply("Don't You Dare Tag my Master😡")
+        await event.reply("Don't You Dare Tag my Master😡")
 
 file_help = os.path.basename(__file__)
 file_help = file_help.replace(".py", "")
