@@ -5,3 +5,6 @@ asyncio
 telethon
 pymongo
 dnspython
+countryinfo
+flag
+html
