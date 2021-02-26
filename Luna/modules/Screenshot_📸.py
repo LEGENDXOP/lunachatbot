@@ -8,7 +8,8 @@ from Luna.events import register
 from selenium.webdriver.chrome.options import Options
 from Luna import *
 from Luna import tbot
-GOOGLE_CHROME_BIN = "/app/.apt/usr/bin/google-chrome"
+from Luna import CHROME_DRIVER, GOOGLE_CHROME_BIN
+
 
 @register(pattern="^/sshot (.*)")
 async def msg(event):
