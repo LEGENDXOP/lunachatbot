@@ -41,7 +41,7 @@ async def updateme_requirements():
         return repr(e)
 
 
-@register(pattern="^/upd(?: |$)(.*)")
+@register(pattern="^/update(?: |$)(.*)")
 async def upstream(ups):
     check = ups.message.sender_id
     if int(check) != int(OWNER_ID):
