@@ -29,7 +29,6 @@ import asyncio
 import shlex
 from typing import Tuple
 from Luna import *
-from Luna.Config import Config
 from Luna.events import register
 import sys
 from telethon import events
