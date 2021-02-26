@@ -3,3 +3,4 @@ pyrogram
 TgCrypto
 asyncio
 telethon
+pymongo
