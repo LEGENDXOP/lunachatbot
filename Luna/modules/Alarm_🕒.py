@@ -1,8 +1,8 @@
-from julia import tbot
+from Luna import tbot
 from telethon import *
 from pymongo import MongoClient
-from julia import MONGO_DB_URI, CMD_HELP
-from julia.events import register
+from Luna import MONGO_DB_URI, CMD_HELP
+from Luna.events import register
 import dateparser 
 import os, asyncio
 
@@ -120,7 +120,7 @@ __help__ = """
 
 **Syntax:** `/setalarm 01/01/2000 10:00:00 AM | America/New_York | breakfast`
 
-**NOTE:** Please turn on notifications for @MissJuliaRobot otherwise you will not get notification for the alarm !
+**NOTE:** Please turn on notifications for @Jarvisevobot otherwise you will not get notification for the alarm !
 """
 
 CMD_HELP.update({
