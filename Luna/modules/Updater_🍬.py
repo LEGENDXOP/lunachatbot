@@ -5,10 +5,10 @@ import sys
 from git import Repo
 from git.exc import GitCommandError, InvalidGitRepositoryError, NoSuchPathError
 import heroku3
-from Luna import OWNER_ID, tbot
+from Luna import OWNER_ID, tbot, UPSTREAM_REPO_URL
 
 
-UPSTREAM_REPO_URL = "https://github.com/Amarnathcdj/lunachatbot.git"
+# UPSTREAM_REPO_URL = "https://github.com/MissJuliaRobot/MissJuliaRobot.git"
 HEROKU_APP_NAME = None
 HEROKU_API_KEY = None
 
@@ -41,7 +41,7 @@ async def updateme_requirements():
         return repr(e)
 
 
-@register(pattern="^/up(?: |$)(.*)")
+@register(pattern="^/upd(?: |$)(.*)")
 async def upstream(ups):
     check = ups.message.sender_id
     if int(check) != int(OWNER_ID):
