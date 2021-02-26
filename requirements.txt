@@ -7,4 +7,3 @@ pymongo
 dnspython
 countryinfo
 flag
-html
