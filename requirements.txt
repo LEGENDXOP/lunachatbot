@@ -21,3 +21,6 @@ PyDictionary
 google_trans_new
 telegraph
 pillow
+faker
+bs4
+html2text
