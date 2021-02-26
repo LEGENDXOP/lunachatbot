@@ -9,3 +9,4 @@ countryinfo
 flag
 heroku3==4.2.3
 gitpython==3.1.11
+gTTS
