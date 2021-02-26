@@ -18,4 +18,5 @@ secureme
 dateparser==1.0.0
 cloudmersive_virus_api_client
 PyDictionary
+hachoir
 google_trans_new
