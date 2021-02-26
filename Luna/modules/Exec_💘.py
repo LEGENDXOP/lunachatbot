@@ -1,7 +1,7 @@
 import subprocess
 from Luna import tbot
 from Luna.events import register
-from Luna import OWNER_ID
+from Luna import OWNER_ID, SUDO_USERS
 import asyncio
 import traceback
 import io
@@ -45,6 +45,8 @@ async def msg(event):
 @register(pattern="^/eval")
 async def _(event):
     if event.sender_id == OWNER_ID:
+        pass
+    elif event.sender_id in SUDO_USERS:
         pass
     else:
         return
