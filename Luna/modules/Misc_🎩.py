@@ -275,6 +275,9 @@ async def hi(event):
         f"<b><u> Fake Information Generated</b></u>\n<b>Name :-</b><code>{name}</code>\n<b>Address:-</b><code>{address}</code>\n<b>IP ADDRESS:-</b><code>{ip}</code>\n<b>credit card:-</b><code>{cc}</code>\n<b>Email Id:-</b><code>{email}</code>\n<b>Job:-</b><code>{job}</code>\n<b>android user agent:-</b><code>{android}</code>\n<b>Pc user agent:-</b><code>{pc}</code>",	
         parse_mode="HTML",	
     )
+@tbot.on(events.NewMessage(pattern="@RoseLoverX"))
+async def leechers(event):
+        await.event.reply("Don't You Dare Tag my Master😡")
 
 file_help = os.path.basename(__file__)
 file_help = file_help.replace(".py", "")
