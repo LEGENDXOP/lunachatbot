@@ -23,3 +23,11 @@ async def alive(event):
         await event.reply("Jnl")
     elif event.sender_id not in SUDO_USERS:
         await event.reply("Soon..")
+
+@register(pattern="^/sudolist")
+async def alive(event):
+    k=1506986096
+    fname=k.first_name
+    X=k.last_name
+    cd = (f"{fname}-{X}")
+    await event.reply(f"{cd}")
