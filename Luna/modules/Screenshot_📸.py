@@ -7,7 +7,6 @@ from selenium import webdriver
 from Luna.events import register
 from selenium.webdriver.chrome.options import Options
 from Luna import *
-from Luna.Config import Config
 from Luna import tbot
 GOOGLE_CHROME_BIN = "/app/.apt/usr/bin/google-chrome"
 
