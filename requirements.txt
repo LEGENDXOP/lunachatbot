@@ -14,5 +14,3 @@ selenium
 youtube-search-python
 youtube_dl
 tswift
-sqlalchemy
-dnspython
