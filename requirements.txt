@@ -11,3 +11,5 @@ bs4
 bing_image_downloader
 flag
 countryinfo
+heroku3
+gitpython
