@@ -134,6 +134,8 @@ async def install(event):
         return
     if event.sender_id == OWNER_ID:
         pass
+    else:
+        return
     if event.reply_to_msg_id:
         try:
             downloaded_file_name = (
