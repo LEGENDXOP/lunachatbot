@@ -25,7 +25,7 @@ from Luna.events import register
 
 
 
-@register(pattern="^/u (.*)")
+@register(pattern="^/user (.*)")
 async def _(event):
     replied_user = await get_full_user(event)
     if replied_user is None:
