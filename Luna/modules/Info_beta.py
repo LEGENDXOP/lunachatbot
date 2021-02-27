@@ -27,7 +27,7 @@ from Luna.events import register
 
 @register(pattern="^/u (.*)")
 async def _(event):
-    replied_user, error_i_a = await get_full_user(event)
+    replied_user = await get_full_user(event)
     if replied_user is None:
         await event.reply("Please repl to a user.\nError - " + str(error_i_a))
         return False
