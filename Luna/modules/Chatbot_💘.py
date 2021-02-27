@@ -3,7 +3,7 @@ from Luna import tbot
 from Luna.events import register
 url = "https://iamai.p.rapidapi.com/ask"
 
-@register(pattern="^/q (.*)")
+@register(pattern="^/ma (.*)")
 async def hmm(event):
   test = event.pattern_match.group(1)
   r = ('\n    \"consent\": true,\n    \"ip\": \"::1\",\n    \"question\": \"{}\"\n').format(test)
