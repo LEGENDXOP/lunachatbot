@@ -1,4 +1,4 @@
-from Luma import tbot, CMD_HELP
+from Luna import tbot, CMD_HELP
 import os
 from typing import Optional
 import Luna.modules.sql.rules_sql as sql
