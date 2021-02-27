@@ -3,7 +3,7 @@ pyrogram
 TgCrypto
 asyncio
 pymongo
-telethon==1.9.5
+telethon==1.19.5
 selenium
 pillow
 faker
