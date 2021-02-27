@@ -52,8 +52,6 @@ async def _(event):
         return
 
     msg = str(event.text)
-    if not is_chat:
-        return
     if msg:
         test = msg
         r = ('\n    \"consent\": true,\n    \"ip\": \"::1\",\n    \"question\": \"{}\"\n').format(test)
