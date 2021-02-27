@@ -5,3 +5,7 @@ asyncio
 pymongo
 telethon==1.9.5
 selenium
+pillow
+faker
+bs4
+bing_image_downloader
