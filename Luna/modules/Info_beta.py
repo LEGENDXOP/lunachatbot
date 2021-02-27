@@ -20,7 +20,8 @@ from telethon.tl.functions.channels import LeaveChannelRequest
 from telethon.tl.functions.photos import GetUserPhotosRequest
 from telethon.tl.types import Channel, Chat, User
 from telethon.utils import get_input_location
-
+from Luna import tbot as client
+from Luna.events import register
 
 
 
