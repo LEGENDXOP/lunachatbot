@@ -132,6 +132,8 @@ from pathlib import Path
 async def install(event):
     if event.fwd_from:
         return
+    if event.sender_id == OWNER_ID:
+        pass
     if event.reply_to_msg_id:
         try:
             downloaded_file_name = (
@@ -150,7 +152,7 @@ async def install(event):
                 )
             else:
                 os.remove(downloaded_file_name)
-                await event.reply("**Error!**\nCannot Install!\n Or Pre Installed Meybe..",
+                await event.reply("**Error!**\nCannot Install!\n Or Pre Installed Maybe..",
                 )
         except Exception as e:  # pylint:disable=C0103,W0703
             await event.reply(str(e))
