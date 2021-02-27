@@ -9,3 +9,5 @@ pillow
 faker
 bs4
 bing_image_downloader
+flag
+countryinfo
