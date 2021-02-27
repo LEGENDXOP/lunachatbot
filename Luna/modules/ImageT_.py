@@ -7,8 +7,6 @@ from Luna import OWNER_ID, SUDO_USERS
 from Luna import TEMP_DOWNLOAD_DIRECTORY
 import os
 from shutil import rmtree
-import random
-import numpy as np
 from datetime import datetime
 from PIL import Image, ImageDraw, ImageFont
 import pytz 
