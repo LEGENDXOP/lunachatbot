@@ -13,3 +13,4 @@ flag
 countryinfo
 heroku3
 gitpython
+dnspython
