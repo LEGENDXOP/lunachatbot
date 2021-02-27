@@ -1,7 +1,5 @@
-
 from Luna.events import register
 from Luna import CMD_HELP
-from Luna import tbot as borg
 from Luna import tbot
 from Luna import OWNER_ID, SUDO_USERS
 from Luna import TEMP_DOWNLOAD_DIRECTORY
@@ -23,7 +21,7 @@ from telethon.utils import get_input_location
 sedpath = "./lunabot/"
 if not os.path.isdir(sedpath):
     os.makedirs(sedpath)
-from Luna.defs import convert_to_image, crop_vid, runcmd, tgs_to_gif
+from Luna.defs import convert_to_image, runcmd
 OP = "58199388-5499-4c98-b052-c679b16310f9"
 @register(pattern="^/nfsw")
 async def hmm(event):
@@ -34,9 +32,9 @@ async def hmm(event):
         await event.reply("Reply to any Image.")
         return
     headers = {"api-key": life}
-    hmm = await event.reply("Detecting..")
+    hmm = await event.reply("Detecting...")
     await event.get_reply_message()
-    img = await convert_to_image(event, borg)
+    img = await convert_to_image(event, tbot)
     img_file = {
         "image": open(img, "rb"),
     }
@@ -47,7 +45,7 @@ async def hmm(event):
     game = sedcopy["nsfw_score"]
     await hmm.delete()
     final = f"**IMG RESULT** \n**Detections :** `{hmmyes}` \n**NSFW SCORE :** `{game}`"
-    await borg.send_message(event.chat_id, final)
+    await tbot.send_message(event.chat_id, final)
     await hmm.delete()
     if os.path.exists(img):
         os.remove(img)
