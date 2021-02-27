@@ -157,7 +157,9 @@ async def install(event):
                 await event.reply("**Error!**\nCannot Install!\n Or Pre Installed Maybe..",
                 )
         except Exception as e:  # pylint:disable=C0103,W0703
-            await event.reply(str(e))
+            j = await event.reply(str(e))
+            await asyncio.sleep(3)
+            await j.delete()
             os.remove(downloaded_file_name)
     await asyncio.sleep(3)
     await event.delete()
