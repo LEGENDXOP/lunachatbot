@@ -4,3 +4,4 @@ TgCrypto
 asyncio
 pymongo
 telethon==1.9.5
+selenium
