@@ -473,7 +473,7 @@ async def convert_to_image(event, borg):
             or lmao.sticker
             or lmao.media
     ):
-        await event.edit("`Format Not Supported.`")
+        await event.reply("`Format Not Supported.`")
         return
     else:
         try:
@@ -488,7 +488,7 @@ async def convert_to_image(event, borg):
         except Exception as e:  # pylint:disable=C0103,W0703
             await event.edit(str(e))
         else:
-            j = await event.edit(
+            j = await event.reply(
                 "Downloaded to `{}` successfully.".format(downloaded_file_name)
             )
     if not os.path.exists(downloaded_file_name):
