@@ -14,3 +14,4 @@ countryinfo
 heroku3
 gitpython
 dnspython
+html2text
