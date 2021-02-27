@@ -18,3 +18,4 @@ html2text
 telegraph
 pygments
 pytz
+google_trans_new
