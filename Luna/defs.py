@@ -456,7 +456,7 @@ async def progress(current, total, event, start, type_of_ps, file_name=None):
                 pass
         else:
             try:
-                await event.reply("{}\n{}".format(type_of_ps, tmp))
+                await event.edit("{}\n{}".format(type_of_ps, tmp))
             except:
                 pass
 
