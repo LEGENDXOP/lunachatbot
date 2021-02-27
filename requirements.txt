@@ -26,3 +26,5 @@ bs4
 html2text
 bing_image_downloader
 hachoir
+sqlalchemy
+dnspython
