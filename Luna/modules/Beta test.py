@@ -27,8 +27,9 @@ import requests
 from telethon import events
 from Luna import tbot, BOT_ID
 
+
 @tbot.on(events.NewMessage(pattern=None))
-async def check_message(event):
+async def _(event):
     if event.is_group:
         pass
     else:
@@ -42,15 +43,6 @@ async def check_message(event):
             return True
     else:
         return False
-
-
-@tbot.on(events.NewMessage(pattern=None))
-async def _(event):
-    if event.is_group:
-        pass
-    else:
-        return
-
     msg = str(event.text)
     if msg:
         test = msg
