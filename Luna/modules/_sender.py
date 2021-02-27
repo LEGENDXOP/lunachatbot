@@ -122,5 +122,38 @@ async def get(event):
     else:
         await event.reply("reply to text message as `.ttf <file name>`")
 
+from Luna.99beta import load_module
+import asyncio
+import os
+from datetime import datetime
+from pathlib import Path
 
-
+@register(pattern="^/install")
+async def install(event):
+    if event.fwd_from:
+        return
+    if event.reply_to_msg_id:
+        try:
+            downloaded_file_name = (
+                await event.client.download_media(  # pylint:disable=E0602
+                    await event.get_reply_message(),
+                    "Luna/modules/",  # pylint:disable=E0602
+                )
+            )
+            if "(" not in downloaded_file_name:
+                path1 = Path(downloaded_file_name)
+                shortname = path1.stem
+                load_module(shortname.replace(".py", ""))
+                await event.reply("Installed.... Ab Full Masti💥\n `{}`".format(
+                        os.path.basename(downloaded_file_name)
+                    ),
+                )
+            else:
+                os.remove(downloaded_file_name)
+                await event.reply("**Error!**\nCannot Install!\n Or Pre Installed Meybe..",
+                )
+        except Exception as e:  # pylint:disable=C0103,W0703
+            await event.reply(str(e))
+            os.remove(downloaded_file_name)
+    await asyncio.sleep(3)
+    await event.delete()
