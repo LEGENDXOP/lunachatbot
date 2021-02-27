@@ -28,4 +28,4 @@ bing_image_downloader
 hachoir
 sqlalchemy
 dnspython
-psycopg2
+psycopg2-binary
