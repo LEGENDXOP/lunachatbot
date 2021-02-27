@@ -16,3 +16,4 @@ gitpython
 dnspython
 html2text
 telegraph
+pygments
