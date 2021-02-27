@@ -36,16 +36,9 @@ async def _(event):
         return
     message = str(event.text)
     reply_msg = await event.get_reply_message()
-    if message.lower() == "Luna":
-        return True
     if reply_msg:
-        if reply_msg.sender_id == BOT_ID:
-            return True
-    else:
-        return False
-    msg = str(event.text)
-    if msg:
-        test = msg
+       if reply_msg.sender_id == BOT_ID:
+        test = event.pattern_match.group(1)
         r = ('\n    \"consent\": true,\n    \"ip\": \"::1\",\n    \"question\": \"{}\"\n').format(test)
         k = f"({r})"
         new_string = k.replace("(", "{")
