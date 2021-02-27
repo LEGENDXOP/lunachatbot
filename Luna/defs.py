@@ -311,7 +311,6 @@ import time
 from os.path import basename
 from typing import List, Optional, Tuple
 import webbrowser
-from bs4 import BeautifulSoup
 from bs4 import BeautifulSoup as bs
 import re
 from telethon.tl.types import InputMessagesFilterDocument
@@ -323,7 +322,6 @@ import zipfile
 import os
 import aiohttp
 import requests
-from bs4 import BeautifulSoup
 import asyncio
 import random
 import requests
