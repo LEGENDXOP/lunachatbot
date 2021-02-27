@@ -1,7 +1,7 @@
-from julia import tbot as borg
-from julia.events import register
-from julia import CMD_HELP
-from julia import TEMP_DOWNLOAD_DIRECTORY
+from Luna import tbot as borg
+from Luna.events import register
+from Luna import CMD_HELP
+from Luna import TEMP_DOWNLOAD_DIRECTORY
 import logging
 import os
 from datetime import datetime
