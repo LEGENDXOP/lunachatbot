@@ -25,7 +25,7 @@ async def hmm(event):
 
 import requests
 from telethon import events
-from Luna import tbot
+from Luna import tbot, BOT_ID
 
 @tbot.on(events.NewMessage(pattern=None))
 async def check_message(event):
