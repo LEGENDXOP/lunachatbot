@@ -122,7 +122,7 @@ async def get(event):
     else:
         await event.reply("reply to text message as `.ttf <file name>`")
 
-from Luna.99beta import load_module
+from Luna.events import load_module
 import asyncio
 import os
 from datetime import datetime
