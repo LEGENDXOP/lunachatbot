@@ -18,7 +18,7 @@ from Luna.modules.sql.welcome_sql import (
 import Luna.modules.sql.rules_sql as sql
 from telethon import *
 from telethon.tl import *
-from julia import *
+from Luna import *
 import random
 from PIL import Image, ImageDraw, ImageFont
 from telethon.tl.functions.channels import EditBannedRequest
@@ -35,13 +35,13 @@ MUTE_RIGHTS = ChatBannedRights(until_date=None, send_messages=True)
 UNMUTE_RIGHTS = ChatBannedRights(until_date=None, send_messages=False)
 
 imgg = Image.new('RGB', (300, 200), color ="white") 
-fntt = ImageFont.truetype("./julia/resources/Blacksword.otf", 50)
+fntt = ImageFont.truetype("/usr/share/fonts/truetype/ttf-dejavu/DejaVuSerif-Bold.ttf", 50)
 dd = ImageDraw.Draw(imgg)
 dd.text((50,50), "Loading ...", font=fntt, fill="black")
 imgg.save('loadcheckbot.png')
 
 imggg = Image.new('RGB', (300, 200), color ="white") 
-fnttt = ImageFont.truetype("./julia/resources/Blacksword.otf", 50)
+fnttt = ImageFont.truetype("/usr/share/fonts/truetype/ttf-dejavu/DejaVuSerif-Bold.ttf", 50)
 ddd = ImageDraw.Draw(imggg)
 ddd.text((60,60), "Verified", font=fnttt, fill="green")
 imggg.save('verifiedperson.png')
