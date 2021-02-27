@@ -2,3 +2,5 @@ aiohttp
 pyrogram
 TgCrypto
 asyncio
+pymongo
+telethon==1.9.5
