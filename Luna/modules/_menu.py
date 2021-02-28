@@ -74,14 +74,6 @@ async def start(event):
                     ),
                 ],
                 [
-                    Button.url(
-                        "Add To Group  👥", "t.me/MissJuliaRobot?startgroup=true"
-                    ),
-                    Button.url(
-                        "Support Group 🎙️", "https://t.me/MissJuliaRobotSupport"
-                    ),
-                ],
-                [
                     Button.inline("Commands ❓", data="help_menu"),
                     Button.url(
                         "Owner ❄️", "https://t.me/RoseLoverX"
