@@ -23,3 +23,4 @@ PyDictionary
 secureme
 bs4
 numpy
+opencv-python
