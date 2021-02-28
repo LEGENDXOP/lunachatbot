@@ -70,13 +70,27 @@ async def start(event):
                         "Add To Group  👥", "t.me/lunaevobot?startgroup=true"
                     ),
                     Button.url(
-                        "Support Group 🎙️", "https://t.me/dclogger"
+                        "Support Group 🎙️", "https://t.me/lunabotsupport"
+                    ),
+                ],
+                [
+                    Button.url(
+                        "Add To Group  👥", "t.me/MissJuliaRobot?startgroup=true"
+                    ),
+                    Button.url(
+                        "Support Group 🎙️", "https://t.me/MissJuliaRobotSupport"
+                    ),
+                ],
+                [
+                    Button.inline("Commands ❓", data="help_menu"),
+                    Button.url(
+                        "Owner ❄️", "https://t.me/RoseLoverX"
                     ),
                 ],
             ],
         )
     else:
-        await event.reply("Heya Anie Here!,\nHow Can I Help Ya.")
+        await event.reply("Heya Luna Here!,\nHow Can I Help Ya.")
 
 
 @tbot.on(events.CallbackQuery(pattern=r"start_again"))
