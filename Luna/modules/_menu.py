@@ -7,7 +7,7 @@ from math import ceil
 from telethon import custom, events, Button
 
 from Luna.events import register
-from Luna import CMD_HELP, BOT_VERSION
+from Luna import CMD_HELP, LUNA_VERSION
 
 from telethon import types
 from telethon.tl import functions
