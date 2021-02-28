@@ -1,9 +1,9 @@
-from julia import CMD_HELP
+from Luna import CMD_HELP
 import os
-from julia import tbot
+from Luna import tbot
 from geopy.geocoders import Nominatim
-from julia.events import register
-from julia import *
+from Luna.events import register
+from Luna import *
 from telethon import *
 from telethon.tl import *
 from pymongo import MongoClient
