@@ -24,3 +24,5 @@ secureme
 bs4
 numpy
 opencv-contrib-python
+youtube_dl
+geopy
