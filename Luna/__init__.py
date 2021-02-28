@@ -14,7 +14,7 @@ StartTime = time.time()
 CMD_LIST = {}
 CMD_HELP = {}
 LOAD_PLUG = {}
-LUNA_VERSION = "1.0"
+LUNA_VERSION = "1.2"
 
 # enable logging
 logging.basicConfig(
