@@ -18,7 +18,7 @@ async def Prof(event):
         return
     message_id = event.message.id
     input_str = event.pattern_match.group(1)
-    the_plugin_file = "./julia/modules/{}.py".format(input_str)
+    the_plugin_file = "./Luna/modules/{}.py".format(input_str)
     if os.path.exists(the_plugin_file):
      message_id = event.message.id
      await event.client.send_file(
