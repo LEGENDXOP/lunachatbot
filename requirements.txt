@@ -21,3 +21,4 @@ pytz
 google_trans_new
 PyDictionary
 secureme
+bs4
