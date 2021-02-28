@@ -8,7 +8,7 @@ from datetime import datetime
 from Luna import TEMP_DOWNLOAD_DIRECTORY as path
 from Luna import TEMP_DOWNLOAD_DIRECTORY
 from datetime import datetime
-
+water = "./Luna/resources/images.jpeg"
 client = tbot
 @register(pattern=r"^/send ?(.*)")
 async def Prof(event):
@@ -16,6 +16,7 @@ async def Prof(event):
         pass
     else:
         return
+    thumb = water
     message_id = event.message.id
     input_str = event.pattern_match.group(1)
     the_plugin_file = "./Luna/modules/{}.py".format(input_str)
@@ -26,10 +27,11 @@ async def Prof(event):
              the_plugin_file,
              force_document=True,
              allow_cache=False,
+             thumb=thumb,
              reply_to=message_id,
          )
     else:
-        await event.reply("Are You On Weed?,No Such File Exist!")
+        await event.reply("No File Found!")
 
 import time
 from io import BytesIO
