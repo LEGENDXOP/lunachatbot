@@ -27,4 +27,5 @@ opencv-contrib-python
 youtube_dl
 geopy
 dateparser
+youtube-search-python
 tswift
