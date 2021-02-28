@@ -11,6 +11,10 @@ import asyncio
 from PIL import Image, ImageDraw, ImageFont
 from telegraph import upload_file
 import html
+import time
+from datetime import datetime
+import random
+import requests
 from telethon.tl.functions.photos import GetUserPhotosRequest
 from telethon.tl.functions.users import GetFullUserRequest
 from telethon.tl.types import MessageEntityMentionName
