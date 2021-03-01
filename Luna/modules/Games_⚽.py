@@ -9,7 +9,8 @@ from telethon.tl.types import *
 
 from Luna import *
 
-from Luna.events import register, juliabot
+from Luna.events import register
+from Luna import lunabot as juliabot
 
 from pymongo import MongoClient
 from Luna import MONGO_DB_URI
